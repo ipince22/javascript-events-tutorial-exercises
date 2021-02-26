@@ -2,16 +2,14 @@ var currentUser = "Mario";
 
 window.onload = function loadfn() {
 	document.getElementById("screen").innerHTML = "It's " + currentUser + "'s turn";
-};
+}
 
 window.turnChanger = function turnChanger() {
-	if (currentUser == "Juan" || currentUser == "Josh") {
-		currentUser = "Mario";
-	} else if (currentUser == "Mario") {
-		currentUser = "Josh";
-	} else {
+	if (currentUser == "Mario") {
 		currentUser = "Juan";
+	} else {
+		currentUser = "Mario";
 	}
 
 	document.getElementById("screen").innerHTML = "It's " + currentUser + "'s turn";
-};
+}
